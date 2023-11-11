@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_1._3.Views.PagePersonas"
+             Title="Nuevo de persona">
+    <VerticalStackLayout Margin="20">
+        <Label Text="Nombres"/>
+        <Frame>
+            <Entry x:Name="txtnombres" Text="{Binding nombres}"/>
+        </Frame>
+        <Label Text="Apellidos"/>
+        <Frame>
+            <Entry x:Name="txtapellidos"  Text="{Binding apellidos}"/>
+        </Frame>
+        <Label Text="Edad"/>
+        <Frame>
+            <Entry x:Name="txtedad" Keyboard="Numeric"  Text="{Binding edad}"/>
+        </Frame>
+        <Label Text="Correo"/>
+        <Frame>
+            <Entry x:Name="txtcorreo" Keyboard="Email"  Text="{Binding correo}"/>
+        </Frame>
+        <Label Text="Dirección"/>
+        <Frame>
+            <Entry x:Name="txtdireccion"  Text="{Binding direccion}"/>
+        </Frame>
+
+        <Button HorizontalOptions="CenterAndExpand" x:Name="btnSalvar" Text="Salvar" Padding="20,10,20,10" Clicked="btnSavar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
